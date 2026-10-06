@@ -13,11 +13,11 @@ public class DiaryTest {
     }
     @Test
     void testThatEntryCanBeCreatedInDiary() {
-        String title = "semicolon journey";
+        int id = 1;
         String body = "i learnt design thinking";
+        String title = "learning journing";
         diary.createEntry(title, body);
-        assertEquals(title, diary.findTitle(title).getTitle());
-        assertEquals(body, diary.findBody(body).getBody());
+        assertEquals(id, diary.findEntryById(id).getId());
     }
     @Test
     void testThatDiaryisLocked(){
@@ -37,4 +37,4 @@ public class DiaryTest {
 
 
 
-}
+
