@@ -1,0 +1,153 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="TQMcB8oUdcbc_o_yVtMZ">
+    <mxGraphModel dx="690" dy="659" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="jzg2_A76bdmHerWEF9DU-5" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Diaries" vertex="1">
+          <mxGeometry height="130" width="220" x="359" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="jzg2_A76bdmHerWEF9DU-6" parent="jzg2_A76bdmHerWEF9DU-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- diaries: List&amp;lt;Diary&amp;gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="26" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="jzg2_A76bdmHerWEF9DU-7" parent="jzg2_A76bdmHerWEF9DU-5" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="220" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="jzg2_A76bdmHerWEF9DU-8" parent="jzg2_A76bdmHerWEF9DU-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ add(String, String): void&lt;div&gt;+ findByUsername(String): Diary&lt;/div&gt;&lt;div&gt;+ delete(String, String): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="220" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jzg2_A76bdmHerWEF9DU-10" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="DiariesTest" vertex="1">
+          <mxGeometry height="86" width="160" x="88" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jzg2_A76bdmHerWEF9DU-11" parent="jzg2_A76bdmHerWEF9DU-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- diaries: Diaries" vertex="1">
+          <mxGeometry height="26" width="160" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="jzg2_A76bdmHerWEF9DU-12" parent="jzg2_A76bdmHerWEF9DU-10" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="160" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="jzg2_A76bdmHerWEF9DU-13" parent="jzg2_A76bdmHerWEF9DU-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ allTestCases(): void" vertex="1">
+          <mxGeometry height="26" width="160" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jzg2_A76bdmHerWEF9DU-22" edge="1" parent="1" style="endArrow=diamondThin;endSize=10;endFill=0;html=1;rounded=0;startArrow=diamond;startFill=0;strokeWidth=1;jumpSize=3;startSize=10;edgeStyle=orthogonalEdgeStyle;" value="Drives">
+          <mxGeometry relative="1" width="160" x="-0.2727" as="geometry">
+            <mxPoint x="579" y="80" as="sourcePoint" />
+            <mxPoint x="739" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jzg2_A76bdmHerWEF9DU-23" connectable="0" parent="jzg2_A76bdmHerWEF9DU-22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.8091" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jzg2_A76bdmHerWEF9DU-24" connectable="0" parent="jzg2_A76bdmHerWEF9DU-22" style="edgeLabel;html=1;align=right;verticalAlign=middle;resizable=0;points=[];" value="&amp;nbsp;1" vertex="1">
+          <mxGeometry relative="1" x="0.7273" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jzg2_A76bdmHerWEF9DU-25" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="MainApplication" vertex="1">
+          <mxGeometry height="86" width="160" x="609" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="jzg2_A76bdmHerWEF9DU-26" parent="jzg2_A76bdmHerWEF9DU-25" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- diaries: Diaries" vertex="1">
+          <mxGeometry height="26" width="160" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="jzg2_A76bdmHerWEF9DU-27" parent="jzg2_A76bdmHerWEF9DU-25" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="160" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="jzg2_A76bdmHerWEF9DU-28" parent="jzg2_A76bdmHerWEF9DU-25" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ main(String[]): void" vertex="1">
+          <mxGeometry height="26" width="160" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jzg2_A76bdmHerWEF9DU-32" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Diary" vertex="1">
+          <mxGeometry height="238" width="220" x="159" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="jzg2_A76bdmHerWEF9DU-33" parent="jzg2_A76bdmHerWEF9DU-32" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- username: String&lt;div&gt;- password: String&lt;/div&gt;&lt;div&gt;- isLocked: boolean&lt;/div&gt;&lt;div&gt;- entries: List&amp;lt;Entry&amp;gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="74" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="jzg2_A76bdmHerWEF9DU-34" parent="jzg2_A76bdmHerWEF9DU-32" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="220" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="jzg2_A76bdmHerWEF9DU-35" parent="jzg2_A76bdmHerWEF9DU-32" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Diary(String, String)&lt;div&gt;+ unlockDiary(String): void&lt;/div&gt;&lt;div&gt;+ lockDiary(): void&lt;/div&gt;&lt;div&gt;+ isLocked() boolean&lt;/div&gt;&lt;div&gt;+ createEntry(String,String):&lt;/div&gt;&lt;div&gt;+ deleteEntry(int): void&lt;/div&gt;&lt;div&gt;+ findEntryById(int): Entry&lt;/div&gt;&lt;div&gt;+ updateEntry(int, String, String): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="220" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="jzg2_A76bdmHerWEF9DU-41" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;startArrow=open;startFill=0;entryX=0.618;entryY=1.014;entryDx=0;entryDy=0;endArrow=diamond;endFill=0;endSize=8;startSize=8;entryPerimeter=0;" target="jzg2_A76bdmHerWEF9DU-8" value="">
+          <mxGeometry relative="1" width="80" x="-0.4366" as="geometry">
+            <Array as="points">
+              <mxPoint x="239" y="220" />
+              <mxPoint x="494.96" y="220" />
+            </Array>
+            <mxPoint x="239" y="250" as="sourcePoint" />
+            <mxPoint x="389" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jzg2_A76bdmHerWEF9DU-42" connectable="0" parent="jzg2_A76bdmHerWEF9DU-41" style="edgeLabel;html=1;align=right;verticalAlign=middle;resizable=0;points=[];" value="1...*" vertex="1">
+          <mxGeometry relative="1" x="-0.8873" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jzg2_A76bdmHerWEF9DU-45" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry height="30" width="60" x="451" y="163" as="geometry" />
+        </mxCell>
+        <mxCell id="jzg2_A76bdmHerWEF9DU-47" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endArrow=open;endFill=0;startArrow=diamond;startFill=0;startSize=8;endSize=8;" value="">
+          <mxGeometry relative="1" width="80" x="0.4819" as="geometry">
+            <Array as="points">
+              <mxPoint x="299" y="80" />
+              <mxPoint x="299" y="50" />
+            </Array>
+            <mxPoint x="249" y="79" as="sourcePoint" />
+            <mxPoint x="359" y="50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jzg2_A76bdmHerWEF9DU-48" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Entry" vertex="1">
+          <mxGeometry height="140" width="190" x="489" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="jzg2_A76bdmHerWEF9DU-49" parent="jzg2_A76bdmHerWEF9DU-48" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- id: int&lt;div&gt;- title: String&lt;/div&gt;&lt;div&gt;- body: String&lt;/div&gt;&lt;div&gt;- dateCreated : LocalDateTime&lt;/div&gt;" vertex="1">
+          <mxGeometry height="63" width="190" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="jzg2_A76bdmHerWEF9DU-50" parent="jzg2_A76bdmHerWEF9DU-48" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="190" y="89" as="geometry" />
+        </mxCell>
+        <mxCell id="jzg2_A76bdmHerWEF9DU-51" parent="jzg2_A76bdmHerWEF9DU-48" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Entry(int, String, String)&lt;div&gt;+ getters and setters()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="43" width="190" y="97" as="geometry" />
+        </mxCell>
+        <mxCell id="jzg2_A76bdmHerWEF9DU-52" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;endArrow=open;endFill=0;startArrow=diamondThin;startFill=0;startSize=10;endSize=8;" value="">
+          <mxGeometry relative="1" width="80" x="0.2667" as="geometry">
+            <Array as="points">
+              <mxPoint x="441.5" y="340" />
+              <mxPoint x="441.5" y="330" />
+            </Array>
+            <mxPoint x="379" y="340" as="sourcePoint" />
+            <mxPoint x="489" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jzg2_A76bdmHerWEF9DU-56" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="DiaryTest" vertex="1">
+          <mxGeometry height="86" width="160" x="449" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="jzg2_A76bdmHerWEF9DU-57" parent="jzg2_A76bdmHerWEF9DU-56" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- diary: Diary" vertex="1">
+          <mxGeometry height="26" width="160" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="jzg2_A76bdmHerWEF9DU-58" parent="jzg2_A76bdmHerWEF9DU-56" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="160" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="jzg2_A76bdmHerWEF9DU-59" parent="jzg2_A76bdmHerWEF9DU-56" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ allTestCases(): void" vertex="1">
+          <mxGeometry height="26" width="160" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jzg2_A76bdmHerWEF9DU-60" edge="1" parent="1" source="jzg2_A76bdmHerWEF9DU-35" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;exitX=0.423;exitY=1.015;exitDx=0;exitDy=0;exitPerimeter=0;endArrow=diamond;endFill=0;startArrow=open;startFill=0;" value="">
+          <mxGeometry relative="1" width="80" x="0.3665" as="geometry">
+            <Array as="points">
+              <mxPoint x="249" y="630" />
+            </Array>
+            <mxPoint x="249" y="630" as="sourcePoint" />
+            <mxPoint x="449" y="632.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jzg2_A76bdmHerWEF9DU-61" connectable="0" parent="jzg2_A76bdmHerWEF9DU-60" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Creates&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.5999" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jzg2_A76bdmHerWEF9DU-62" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Has" vertex="1">
+          <mxGeometry height="30" width="60" x="415" y="335" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
