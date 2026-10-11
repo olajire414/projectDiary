@@ -18,13 +18,12 @@ public class Diary {
 
     public void createEntry(String title,String body){
         if(!isLocked) {
-            int id = entries.size() + 1;
+            int id = 0;
             Entry entry = new Entry(id, title, body);
             entries.add(entry);
-
+        id++;
         }
     }
-
     public Entry findEntryById(int id) {
             for (Entry entry : entries) {
                 if (entry.getId() == id) {
@@ -33,8 +32,6 @@ public class Diary {
             }
         return null;
     }
-
-
     public void deleteEntry(int id){
 
         if(!isLocked) {
@@ -59,8 +56,11 @@ public class Diary {
         }
 
     }
+public boolean checkPassword(String password){
+        return this.password.equals(password);
+}
 
-    public void updateEntry(int id, String title,String body){
+    public void updateEntry(int id, String title, String body){
         if(!isLocked){
             Entry entry = findEntryById(id);
             if(entry != null){
@@ -72,5 +72,6 @@ public class Diary {
 
 
     }
+
 
 }
