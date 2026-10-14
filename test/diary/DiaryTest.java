@@ -5,45 +5,87 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class DiaryTest {
-    Entry entry = new Entry(1,"topic","yes sir");
+
     Diary diary;
+    //Entry entry;
     @BeforeEach
     void startWith(){
-         diary = new Diary("olajire", "12345");
+         diary = new Diary();
     }
-    @Test
-    void testThatEntryCanBeCreatedInDiary() {
 
-        String body = "i learnt design thinking";
-        String title = "learning journing";
-        diary.createEntry(title, body);
-        assertEquals(id, diary.findEntryById(id).getId());
+
+    @Test
+    void testThatNumberOfEntryIsZero() {
+        assertEquals(0,diary.getSize());
+
     }
-    @Test
-    void testThatDiaryCanBeUnlocked(){
-        diary.lockDiary();
-        diary.unLockDiary("12345");
-        assertFalse(diary.isLocked());
-
-
-
+   @Test
+   void testThatEntryCanBeCreated(){
+        String title = "the tall tree";
+        String body = "worship the tree";
+       diary.createEntry(title,body);
+       assertEquals(1,diary.getSize());
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @Test
+    void testThatDiaryIsLocked(){
+        diary.lockDiary();
+        assertTrue(diary.islocked());
     }
+
+    @Test
+    void testThatEntryCanBeDeleted(){
+        Entry entry = new Entry();
+        entry.setId(1);
+        diary.add(entry);
+        assertEquals(1,diary.getSize());
+        diary.deleteEntryById(1);
+        assertEquals(0,diary.getSize());
+    }
+    @Test
+    void testThatEntryCanBeFoundById(){
+        Entry entry = new Entry();
+        diary.add(entry);
+        assertEquals(1,diary.getSize());
+        entry.setId(1);
+        assertEquals(1,diary.findEntryById(1).getId());
+    }
+
+   @Test
+   void testThatEntryCanBeUpdated() {
+       Entry entry = new Entry();
+       diary.add(entry);
+       entry.setId(1);
+       entry.setId(2);
+       assertEquals(2, diary.findEntryById(2).getId());
+       entry.setTitle("human");
+       entry.setTitle("hmmm");
+       assertEquals("hmmm", diary.findEntryByTitle("hmmm").getTitle());
+       entry.setBody("human");
+       entry.setBody("hmmm");
+       assertEquals("hmmm", diary.findEntryByBody("hmmm").getBody());
+
+   }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
