@@ -10,7 +10,7 @@ public class DiaryTest {
     //Entry entry;
     @BeforeEach
     void startWith(){
-         diary = new Diary();
+         diary = new Diary("ola", "1111");
     }
 
 
@@ -65,6 +65,11 @@ public class DiaryTest {
        entry.setBody("hmmm");
        assertEquals("hmmm", diary.findEntryByBody("hmmm").getBody());
 
+   }
+   @Test
+    void testThatDiaryUsernameCanBeSet(){
+        Diary diary = new Diary("ola", "1111");
+        assertEquals("ola",diary.getUsername());
    }
     }
 

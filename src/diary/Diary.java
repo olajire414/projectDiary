@@ -11,17 +11,15 @@ public class Diary {
     private String password;
     private boolean isLocked;
     private int size;
+    private String title;
 
+    public String getUsername() {
+        return username;
+    }
 
     public Diary(String username, String password) {
         this.username = username;
         this.password = password;
-    }
-
-    public Diary() {
-        this.username = username;
-        this.password = password;
-
     }
 
     public void createEntry(String title, String body) {
@@ -78,7 +76,7 @@ public class Diary {
 
     public Entry findEntryByTitle(String title) {
         for (Entry entry : entries) {
-            if (entry.getTitle() == title) {
+            if (entry.getTitle().equals(title)) {
                 return entry;
             }
         }
@@ -87,14 +85,19 @@ public class Diary {
 
     public Entry findEntryByBody(String body) {
         for (Entry entry : entries) {
-            if (entry.getTitle() == body) {
+            if (entry.getTitle().equals(body)) {
                 return entry;
             }
         }
         return null;
-
+    }
+    public void setUsername(String username) {
+        this.username = username;
     }
 
+    public void setTitle(String title) {
+        this.title = title;
+    }
 }
 
 
