@@ -20,10 +20,19 @@ public class DiariesTest {
         assertEquals(1,diaries.getSize());
     }
     @Test
-    void testThatFindDiaryByUserName(){
+    void testThatIHaveDiary_CanBeFoundByUserName(){
         Diary diary = new Diary("ola", "1111");
         diaries.add("ola", "1111");
         assertEquals("ola",diaries.findDiaryByUsername("ola").getUsername());
+    }
+    @Test
+    void testThatIHaveDiary_PasswordAndUsernameCanBeDeleted(){
+        Diary diary = new Diary("ola","1111");
+        diaries.deleteDiary("ola","1111");
+        assertEquals("null",diaries.findDiaryByUsername("ola").getUsername());
+        assertEquals("null",diaries.findDiaryByPassword("ola").getPassword());
+
+
 
 
     }

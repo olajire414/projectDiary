@@ -98,6 +98,15 @@ public class Diary {
     public void setTitle(String title) {
         this.title = title;
     }
+
+    public void setPassword(String password) {
+        this.password = password;
+
+    }
+    public String getPassword() {
+        return password;
+
+    }
 }
 
 

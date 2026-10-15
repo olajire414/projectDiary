@@ -34,4 +34,26 @@ public class Diaries {
     }
     return null;
     }
+
+    public void deleteDiary(String username, String password) {
+        for(Diary diary : diaries){
+            if (diary.getUsername().equals(username)){
+                diary.setUsername("null");
+            }
+            if (diary.getPassword().equals(password)){
+                diary.setPassword("null");
+            }
+
+
+        }
+    }
+
+    public Diary findDiaryByPassword(String password) {
+        for(Diary diary : diaries){
+            if(diary.getPassword().equals(password)){
+                return diary;
+            }
+        }
+        return null;
+    }
 }
